@@ -1,0 +1,113 @@
+.modal {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: all .3s linear;
+}
+
+.modal.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal__content {
+  width: 31rem;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: .5rem;
+  position: relative;
+}
+
+.button__close {
+  padding: .6rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  transition: all .3s linear;
+}
+
+.button__close:hover {
+  color: rgb(161, 0, 0);
+  cursor: pointer;
+}
+
+.modal__title {
+  text-transform: uppercase;
+}
+
+.modal__body {
+  margin-bottom: .5rem;
+}
+
+.button__editor {
+  padding: .5rem 1rem;
+  background-color: #7ec757;
+  color: #fff;
+  border: none;
+  border-radius: .2rem;
+  transition: all .3s linear;
+  margin-right: .5rem;
+}
+
+/* .button__editor.disableds {
+  background-color: #aae58a;
+} */
+
+.button__editor.disableds:disabled {
+  background-color: #aae58a;
+}
+
+.button__editor:hover {
+  background-color: #559533;
+  cursor: pointer;
+}
+
+.button__delete {
+  padding: .5rem 1rem;
+  background-color: #cd2013;
+  color: #fff;
+  border: none;
+  border-radius: .2rem;
+  transition: all .3s linear;
+}
+
+.button__delete:hover {
+  background-color: #ac1f15;
+  cursor: pointer;
+}
+
+.textarea {
+  margin-top: .5rem;
+  width: 30rem;
+  height: 7rem;
+  resize: none;
+  border: 1px solid #c2f2a9;
+  border-radius: .2rem;
+}
+
+.textarea:focus {
+  outline-color: #42bc00;
+}
+
+.input {
+  width: 50%;
+  padding: .3rem;
+  border: 1px solid #c2f2a9;
+  border-radius: .2rem;
+}
+
+.input:focus {
+  outline-color: #42bc00;
+}

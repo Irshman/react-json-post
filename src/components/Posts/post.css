@@ -1,0 +1,43 @@
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 1.5rem;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(210, 210, 210);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  transition: box-shadow .3s linear;
+}
+
+.card:hover {
+  box-shadow: 1px 1px 10px rgb(210, 210, 210);
+  cursor: pointer;
+}
+
+.card__title {
+  text-transform: uppercase;
+  margin: 10px 0px 0px 0px;
+  flex: 1 1 auto;
+}
+
+.card__text {
+  
+}
+
+.button {
+  width: 20%;
+  padding: .5rem 1rem;
+  background-color: #2c3cc6;
+  color: #fff;
+  border: none;
+  border-radius: .2rem;
+  transition: all .3s linear;
+}
+
+.button:hover {
+  background-color: #1e2a95;
+  cursor: pointer;
+}
